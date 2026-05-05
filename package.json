@@ -1,0 +1,19 @@
+{
+  "name": "mock-database",
+  "version": "1.0.0",
+  "description": "Mock database made with express and ejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tudor4317/Mock-Database.git"
+  },
+  "author": "Tudor Frincu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tudor4317/Mock-Database/issues"
+  },
+  "homepage": "https://github.com/Tudor4317/Mock-Database#readme"
+}
