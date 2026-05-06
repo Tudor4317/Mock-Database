@@ -1,8 +1,8 @@
-import userStorage from "../storages/usersStorage"
+import mockDatabase from "../storages/usersStorage.js"
 
 export function getUsers(req,res) {
 
-res.render("index", {title: "User List ",users : userStorage.getUsers()})
+res.render("index", {title: "User List ",users : mockDatabase.getUsers()})
 
 }
 
@@ -13,6 +13,7 @@ export function getCreate (req,res){
 
 export function postCreate(req,res){
     const {firstName, lastName} = req.body
-    userStorage.addUser({firstName, lastName})
+    mockDatabase.addUser({firstName, lastName})
     res.redirect("/")
 }
+

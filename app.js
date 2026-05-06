@@ -1,6 +1,7 @@
 import express from "express"
 import path from "path"
 import { fileURLToPath } from "url"
+import usersRouter from "./routers/usersRouter.js"
 const app = express()
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -12,8 +13,8 @@ const cssPath = path.join(__dirname,"public")
 app.use(express.static(cssPath))
 app.use(express.urlencoded({extended: true}))
 
-app.use()
-app.use()
+app.use("/",usersRouter)
+
 
 const PORT = 3000 
 app.listen(PORT,(error) =>{
