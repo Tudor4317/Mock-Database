@@ -1,0 +1,1 @@
+Basic express project that uses forms for data input and stores them in an object and renders the input as html in the "/" path.This project is backend based so I didn't include any css, but if you want, you can create a directory (you need to set the name in app.js cssPath variable)and add css stylesheets.
